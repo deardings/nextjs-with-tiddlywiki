@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently --kill-others \"next dev\" \"tiddlywiki ./tiddlywiki/ --listen\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,10 +14,12 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7",
     "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.8",
+    "concurrently": "^7.4.0",
     "date-fns": "^2.29.2",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
