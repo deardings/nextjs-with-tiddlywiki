@@ -12,17 +12,17 @@ export default function Page({ page }: PageType) {
         <Container>
           <Head>
             <title>
-              page.title | hier stand in geschweiften Klammern: content.title
+              {page.title}
             </title>
           </Head>
-          <h1 className='text-5xl mx-auto font-bold tracking-tighter leading-tight md:pr-8 prose'>
+          <h1 className='text-5xl mx-auto font-bold tracking-tighter leading-tight md:pr-8'>
             <div dangerouslySetInnerHTML={{ __html: page.title }}></div>
           </h1>
-          <div className='m-5 text-lg mb-4'>
+          <div className='text-lg mb-4'>
             <TiddlerDateFormatter dateString={page.published_date} />
           </div>
           <div
-            className='max-w-2xl mx-auto mb-10 prose lg:text-justify break-normal'
+            className='max-w-2xl mb-10 prose lg:text-justify break-normal'
             dangerouslySetInnerHTML={{ __html: page.text }}></div>
         </Container>
       </Layout>
