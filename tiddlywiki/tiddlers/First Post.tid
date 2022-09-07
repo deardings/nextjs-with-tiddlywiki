@@ -1,0 +1,8 @@
+created: 20220904143017566
+modified: 20220907173418918
+published_date: 20220907193418918
+tags: Published
+title: First Post
+type: text/vnd.tiddlywiki
+
+This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running "npm run dev" or "yarn dev" in the root directory of the repository. Then visit [[https://localhost:3000]].

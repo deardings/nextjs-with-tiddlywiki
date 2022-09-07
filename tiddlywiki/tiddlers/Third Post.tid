@@ -1,0 +1,10 @@
+created: 20220907205607823
+modified: 20220907210311039
+published_date: 2022090723031138
+tags: Published
+title: Third Post
+type: text/vnd.tiddlywiki
+
+! It works
+
+Note how all your //formatting//, [[external links|https://example.com]], transclusions and macros get rendered on the frontend. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend.

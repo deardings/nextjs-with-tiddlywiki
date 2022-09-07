@@ -1,0 +1,32 @@
+created: 20220831100910956
+description: Next JSON Exporter
+extension: .json
+modified: 20220907173330648
+tags: $:/tags/Exporter
+title: $:/plugins/dd/next-json/publish-exporter
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+`[
+		`<$list filter={{$:/config/next-json/filter}} counter="counter">
+			`{
+				"title" : "`
+					<$wikify name="deception" text={{{ [<currentTiddler>get[title]] }}} output="html">
+					<$text text={{{ [<deception>jsonstringify[]] }}}/>
+					</$wikify>
+				`",
+				"published_date" : "`<$text text={{{ [{!!published_date}!is[blank]else{!!created}!is[blank]else{!!modified}] }}}/>`",
+				"slug" : "`<$text text={{{[<currentTiddler>slugify[]]}}}/>`",
+				"text" : "`
+					<$wikify name="description" text={{{ [<currentTiddler>get[text]] }}} output="html">
+					<$text text={{{ [<description>jsonstringify[]] }}}/>
+					</$wikify>
+				`",
+				"excerpt" : "`
+					<$wikify name="description" text={{{ [<currentTiddler>get[text]split[ ]first[30]join[ ]] }}} output="html">
+					<$text text={{{ [<description>jsonstringify[]] }}}/>
+					</$wikify>
+				`"
+			}`<$list filter="[<counter-last>!match[yes]]">,</$list>
+		</$list>`
+]`

@@ -1,5 +1,5 @@
-import content from '../../nextjs-with-tiddlywiki/tiddlywiki/tiddlers/published.json';
-import TiddlerType from '../../nextjs-with-tiddlywiki/interfaces/tiddler';
+import content from '../tiddlywiki/tiddlers/published.json';
+import TiddlerType from '../interfaces/tiddler';
 
 export function getPostSlugs() {
   return content.map((post) => post.slug);

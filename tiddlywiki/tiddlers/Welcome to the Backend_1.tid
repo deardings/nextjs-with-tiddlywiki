@@ -1,0 +1,9 @@
+created: 20220904142738726
+modified: 20220907165301391
+tags: 
+title: Welcome to the Backend
+type: text/vnd.tiddlywiki
+
+This is a basic Tiddlywiki run on Node.js with a few configuration, namely [[Custom JSON Export]] and [[Publishing Button|$:/plugins/dd/publish-button]]
+
+Bitte an $:/config/Server/AllowAllExternalFilters denken! (Don't Face public)

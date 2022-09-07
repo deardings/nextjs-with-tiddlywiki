@@ -6,7 +6,7 @@ type Props = {
 
 const TiddlerDateFormatter = ({ dateString }: Props) => {
   const date = parse(dateString, "yyyyMMddkkmmssSSS", new Date())
-  return <time dateTime={dateString}>{format(date, 'd. LLLL yyyy')}</time>
+  return <time dateTime={dateString}>{format(date, 'LLLL do, yyyy')}</time>
 }
 
 export default TiddlerDateFormatter

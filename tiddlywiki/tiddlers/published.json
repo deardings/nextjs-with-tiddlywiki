@@ -1,0 +1,21 @@
+[
+		{
+				"title" : "<p>First Post</p>",
+				"published_date" : "20220907193418918",
+				"slug" : "first-post",
+				"text" : "<p>This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running \"npm run dev\" or \"yarn dev\" in the root directory of the repository. Then visit <a class=\"tc-tiddlylink-external\" href=\"https://localhost:3000\" rel=\"noopener noreferrer\" target=\"_blank\">https://localhost:3000</a>.</p>",
+				"excerpt" : "<p>This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running \"npm run dev\" or \"yarn</p>"
+			},{
+				"title" : "<p>Second Post</p>",
+				"published_date" : "20220907204327780",
+				"slug" : "second-post",
+				"text" : "<p>This post is not published yet. Try it out and push the publish-button on the upper right corner of this tiddler!</p>",
+				"excerpt" : "<p>This post is not published yet. Try it out and push the publish-button on the upper right corner of this tiddler!</p>"
+			},{
+				"title" : "<p>Third Post</p>",
+				"published_date" : "2022090723031138",
+				"slug" : "third-post",
+				"text" : "<h1 class=\"\">It works</h1><p>Note how all your <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a>, transclusions and macros get rendered on the frontend. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend.</p>",
+				"excerpt" : "<h1 class=\"\">It works</h1><p>Note how all your <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a>, transclusions and macros get rendered on the frontend. You may choose which other fields to export/import by configuring the exporter and</p>"
+			}
+]

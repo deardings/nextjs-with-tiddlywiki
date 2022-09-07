@@ -1,0 +1,30 @@
+caption: {{$:/core/images/export-button}} {{$:/language/Buttons/Publish/Caption}}
+created: 20220905172544701
+description: {{$:/language/Buttons/Publish/Hint}}
+modified: 20220907163634689
+tags: $:/tags/ViewToolbar
+title: $:/plugins/dd/publish-button
+type: text/vnd.tiddlywiki
+
+\define tv-action-refresh-policy() always
+
+\define publish-actions()
+<$action-setfield $field="published_date" $value=<<now YYYY0MM0DD0hh0mm0ssXXX>>/>
+<$action-setfield $field="tags" $value="Published" />
+<$wikify name="dings" text={{{ [[$:/plugins/dd/next-json/publish-exporter]get[text]] }}}>
+<$action-setfield $tiddler="published.json" $field="text" $value=<<dings>> />
+<$/wikify>
+\end
+
+\define publishButton()
+<$button tooltip={{$:/language/Buttons/Publish/Hint}} aria-label={{$:/language/Buttons/Publish/Caption}} class=<<tv-config-toolbar-class>> actions=<<publish-actions>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/core/images/export-button}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text="Export to JSON tiddler"/></span>
+</$list>
+</$button>
+\end
+
+<<publishButton>>

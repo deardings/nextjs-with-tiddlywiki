@@ -1,0 +1,16 @@
+created: 20220907161412278
+modified: 20220907161412278
+title: published
+type: text/vnd.tiddlywiki
+
+[
+		{
+				"title" : "<p>Publish-Action-Button</p>",
+				"untertitel" : "",
+				"created" : "20220906181246650",
+				"modified" : "20220907161410213",
+				"id" : "publish-action-button",
+				"text" : "<p><button class=\"\">\nPublish!\n</button></p>",
+				"excerpt" : "<p><button class=\"\">\nPublish!\n</button></p>"
+			}
+]
