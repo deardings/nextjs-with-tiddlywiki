@@ -26,11 +26,12 @@ const HeroPost = ({
           height='20em'
           layout='responsive'
           objectFit='contain'
+          alt={title}
         />
       </div>
       <div className='md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28'>
         <div>
-          <h1 className='mb-4 text-6xl font-bold lg:text-5xl leading-tight'>
+          <h1 className='mb-4 text-6xl font-bold lg:text-8xl leading-tight'>
             <Link as={`/posts/${slug}`} href='/posts/[slug]'>
               <a className='hover:underline'>
                 <div dangerouslySetInnerHTML={{ __html: title }}></div>

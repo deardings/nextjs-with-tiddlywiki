@@ -1,9 +1,8 @@
 created: 20220904142738726
-modified: 20220909132914589
-tags: dings bums
+modified: 20220909151243796
+tags: 
 title: Welcome to the Backend
 type: text/vnd.tiddlywiki
 
 This is a basic Tiddlywiki run on Node.js with a few configurations, namely a [[Custom JSON Exporter|$:/plugins/dd/nextjs-with-tiddlywiki/publish-exporter]] and the [[Publish Button|$:/plugins/dd/nextjs-with-tiddlywiki/publish-button]] {{$:/images/nextjs-with-tiddlywiki/publish-button}}.
 
-{{!!tags}}

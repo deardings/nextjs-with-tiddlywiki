@@ -26,6 +26,7 @@ const PostPreview = ({
           height='20em'
           layout='responsive'
           objectFit='cover'
+          alt={title}
         />
       </div>
       <h3 className='text-5xl mb-3 leading-snug font-bold hover:underline'>

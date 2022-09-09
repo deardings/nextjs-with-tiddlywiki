@@ -1,19 +1,22 @@
 import Link from 'next/link';
+import Container from './container';
 
 const Header = () => {
   return (
-    <div className='flex justify-end gap-10 m-8'>
-      <h2>
-        <Link href='/'>
-          <a className='hover:underline'>Home</a>
-        </Link>
-      </h2>
-      <h2>
-        <Link href='/allposts'>
-          <a className='hover:underline'>All Posts</a>
-        </Link>
-      </h2>
-    </div>
+    <Container>
+      <div className='flex justify-end gap-10 mb-8 mt-8'>
+        <h2 className='text-3xl font-bold'>
+          <Link href='/'>
+            <a className='hover:underline'>Home</a>
+          </Link>
+        </h2>
+        <h2 className='text-3xl font-bold'>
+          <Link href='/allposts'>
+            <a className='hover:underline'>All Posts</a>
+          </Link>
+        </h2>
+      </div>
+    </Container>
   );
 };
 

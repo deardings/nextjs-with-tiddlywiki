@@ -1,14 +1,13 @@
 cover_image: raphael-schaller-GkinCd2enIY-unsplash.jpg
 created: 20220907205607823
-modified: 20220909134415789
-published_date: 20220909154415789
-tags: Published
+modified: 20220909153634027
+tags: 
 title: Third Post
 type: text/vnd.tiddlywiki
 
-! It works
+! How it works
 
-Note how most of the //formatting//, [[external links|https://example.com]] and transclusions get rendered on the [[frontend|http://localhost:3000]]. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend.
+After publishing this tiddle, note how most of the //formatting//, [[external links|https://example.com]], widgets and transclusions get rendered on the [[frontend|http://localhost:3000]]. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend. For now, I skipped tags, because their listing and linking will not work automatically in the Next.js app. Internal links will ''not'' be working.
 
 I have seen tiddlywiki inline images being published, too, but as they will get wikified/exported as text to "published.json" this is not recommendable. Better put all all your images inside of the "public/img/" folder and link to them like this: 
 

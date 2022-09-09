@@ -24,6 +24,7 @@ export default function Page({ page }: PageType) {
               height='20em'
               layout='responsive'
               objectFit='cover'
+              alt={page.title}
             />
           </div>
           <h1 className='text-8xl mx-auto font-bold tracking-tighter leading-tight md:pr-8'>
@@ -33,7 +34,7 @@ export default function Page({ page }: PageType) {
             <TiddlerDateFormatter dateString={page.published_date} />
           </div>
           <div
-            className='max-w-2xl mb-10 prose lg:text-justify break-normal'
+            className='max-w-4xl mb-10 prose lg:text-justify break-normal'
             dangerouslySetInnerHTML={{ __html: page.text }}></div>
         </Container>
       </Layout>
