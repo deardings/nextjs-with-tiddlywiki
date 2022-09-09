@@ -1,7 +1,7 @@
 cover_image: raphael-schaller-GkinCd2enIY-unsplash.jpg
 created: 20220907205607823
-modified: 20220909181354980
-published_date: 20220909201354980
+modified: 20220909192337042
+published_date: 2022090921233742
 tags: Published
 title: Second Post
 type: text/vnd.tiddlywiki
@@ -19,4 +19,4 @@ I have seen tiddlywiki inline images being published, too, but as they will get 
 
 It's not pretty in the tiddlywiki, but works okay on the frontend. The features of Next.js' `<Image />` component with it's optimization will not get used though.
 
-For the title images I added the "title_image"-field containing only the file name, the path to the "public/img/" folder is added in the [slug].tsx file and hero-post.tsx and post-preview.tsx.
+For the title images I added the "cover_image"-field containing only the file name, the path to the "public/img/" folder is added in the [slug].tsx file and hero-post.tsx and post-preview.tsx.

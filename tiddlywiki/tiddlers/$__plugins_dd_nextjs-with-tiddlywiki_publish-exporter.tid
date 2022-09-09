@@ -1,14 +1,14 @@
 created: 20220831100910956
 description: Next JSON Exporter
 extension: .json
-modified: 20220909134603293
+modified: 20220909190129999
 tags: 
 title: $:/plugins/dd/nextjs-with-tiddlywiki/publish-exporter
 type: text/vnd.tiddlywiki
 
 \whitespace trim
 `[
-		`<$list filter={{$:/config/nextjs-with-tiddlywiki/filter}} counter="counter">
+		`<$list filter={{$:/config/nextjs-with-tiddlywiki/export-filter}} counter="counter">
 			`{
 				"title" : "`<$text text={{{[title<currentTiddler>]}}}/>`",
 				"published_date" : "`<$text text={{{ [{!!published_date}] }}}/>`",

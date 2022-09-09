@@ -1,7 +1,7 @@
 created: 20220907150708499
-modified: 20220909133637035
+modified: 20220909190029075
 tags: 
-title: $:/config/nextjs-with-tiddlywiki/filter
+title: $:/config/nextjs-with-tiddlywiki/export-filter
 type: text/vnd.tiddlywiki
 
 [!is[system]tag[Published]]

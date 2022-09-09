@@ -1,0 +1,10 @@
+created: 20220904142738726
+modified: 20220909192303443
+tags: 
+title: Welcome to Nextjs-with-TiddlyWiki
+type: text/vnd.tiddlywiki
+
+This is a basic Tiddlywiki run on Node.js with a few configurations, namely a [[Custom JSON Exporter|$:/plugins/dd/nextjs-with-tiddlywiki/publish-exporter]] and the [[Publishing Buttons|$:/plugins/dd/nextjs-with-tiddlywiki/publish-button]] {{$:/images/nextjs-with-tiddlywiki/publish-button}}. I packed all relevant files to [[nextjs-with-tiddlywiki.json]], which you could import to use without the frontend.
+
+The buttons will add or remove a "Published" tag to current tiddler and export the content of all tiddlers tagged "Published" to the [[published.json]] file. This file gets imported in the Next.js frontend app.
+
