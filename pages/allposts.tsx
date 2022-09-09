@@ -14,7 +14,7 @@ export default function Rezensionen({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Geist.lol | Alle Besprechungen</title>
+          <title>All Posts | Next.js with Tiddlywiki</title>
         </Head>
         <Container>
           <AllStories posts={allPosts} />
@@ -30,6 +30,7 @@ export const getStaticProps = async () => {
     'published_date',
     'excerpt',
     'slug',
+    'cover_image',
   ]);
 
   return {

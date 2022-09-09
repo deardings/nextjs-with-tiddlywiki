@@ -1,21 +1,24 @@
 [
 		{
-				"title" : "<p>First Post</p>",
-				"published_date" : "20220907193418918",
+				"title" : "First Post",
+				"published_date" : "20220909154818583",
 				"slug" : "first-post",
 				"text" : "<p>This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running \"npm run dev\" or \"yarn dev\" in the root directory of the repository. Then visit <a class=\"tc-tiddlylink-external\" href=\"https://localhost:3000\" rel=\"noopener noreferrer\" target=\"_blank\">https://localhost:3000</a>.</p>",
-				"excerpt" : "<p>This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running \"npm run dev\" or \"yarn</p>"
+				"excerpt" : "<p>This is the first post. It's already published and will get rendered on the frontend. To view the frontend, start the development Server by running \"npm run dev\" or \"yarn</p>",
+				"cover_image" : "romain-vignes-ywqa9IZB-dU-unsplash.jpg"
 			},{
-				"title" : "<p>Second Post</p>",
-				"published_date" : "20220907204327780",
+				"title" : "Second Post",
+				"published_date" : "20220909154359951",
 				"slug" : "second-post",
-				"text" : "<p>This post is not published yet. Try it out and push the publish-button on the upper right corner of this tiddler!</p>",
-				"excerpt" : "<p>This post is not published yet. Try it out and push the publish-button on the upper right corner of this tiddler!</p>"
+				"text" : "<p>\nThis post is published! By pushing the publish button it received the tag \"Published\", the field \"published_date\" has been set to the current date and all tiddlers tagged \"Published\" have been exported to the \"published.json\" tiddler/file.\n</p>",
+				"excerpt" : "<p>\nThis post is published! By pushing the publish button it received the tag \"Published\", the field \"published_date\" has been set to the current date and all tiddlers tagged \"Published\" have been exported to the \"published.json\" tiddler/file.\n</p>",
+				"cover_image" : "martin-pechy-iXHdGk8JVYU-unsplash.jpg"
 			},{
-				"title" : "<p>Third Post</p>",
-				"published_date" : "2022090723031138",
+				"title" : "Third Post",
+				"published_date" : "20220909154415789",
 				"slug" : "third-post",
-				"text" : "<h1 class=\"\">It works</h1><p>Note how all your <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a>, transclusions and macros get rendered on the frontend. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend.</p>",
-				"excerpt" : "<h1 class=\"\">It works</h1><p>Note how all your <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a>, transclusions and macros get rendered on the frontend. You may choose which other fields to export/import by configuring the exporter and</p>"
+				"text" : "<h1 class=\"\">It works</h1><p>Note how most of the <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a> and transclusions get rendered on the <a class=\"tc-tiddlylink-external\" href=\"http://localhost:3000\" rel=\"noopener noreferrer\" target=\"_blank\">frontend</a>. You may choose which other fields to export/import by configuring the exporter and adjusting the imports on the frontend.</p><p>I have seen tiddlywiki inline images being published, too, but as they will get wikified/exported as text to \"published.json\" this is not recommendable. Better put all all your images inside of the \"public/img/\" folder and link to them like this: </p><pre><code>&lt;$text text=`[img[/img/raphael-schaller-GkinCd2enIY-unsplash.jpg]]`</code></pre><p><img class=\" tc-image-loading\" src=\"/img/raphael-schaller-GkinCd2enIY-unsplash.jpg\"></p><p>It's not pretty in the tiddlywiki, but works okay on the frontend. The features of Next.js' <code>&lt;Image /&gt;</code> component with it's optimization will not get used though.</p><p>For the title images I added the \"title_image\"-field containing only the file name, the path to the \"public/img/\" folder is added in the [slug].tsx file and hero-post.tsx and post-preview.tsx.</p>",
+				"excerpt" : "<h1 class=\"\">It works</h1><p>Note how most of the <em>formatting</em>, <a class=\"tc-tiddlylink-external\" href=\"https://example.com\" rel=\"noopener noreferrer\" target=\"_blank\">external links</a> and transclusions get rendered on the <a class=\"tc-tiddlylink-external\" href=\"http://localhost:3000\" rel=\"noopener noreferrer\" target=\"_blank\">frontend</a>. You may choose which other fields to export/import by configuring the exporter and</p>",
+				"cover_image" : "raphael-schaller-GkinCd2enIY-unsplash.jpg"
 			}
 ]

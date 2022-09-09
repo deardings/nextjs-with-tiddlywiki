@@ -18,7 +18,7 @@ export default function Index({ recentPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Geist.lol | Rezensionen ohne Hand und Fuß</title>
+          <title>Next.js with TiddlyWiki</title>
         </Head>
         <Container>
           <Intro />
@@ -28,6 +28,7 @@ export default function Index({ recentPosts }: Props) {
               published_date={heroPost.published_date}
               excerpt={heroPost.excerpt}
               slug={heroPost.slug}
+              cover_image={heroPost.cover_image}
             />
           )}
           {morePosts.length > 0 && <MorePosts posts={morePosts} />}
@@ -43,8 +44,9 @@ export const getStaticProps = async () => {
     'published_date',
     'excerpt',
     'slug',
+    'cover_image',
   ]).slice(0, 9);
- 
+
   return {
     props: { recentPosts },
   };

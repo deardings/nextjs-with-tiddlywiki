@@ -5,19 +5,19 @@ const Intro = () => {
         Next.js-with-TiddlyWiki
       </h1>
       <h2 className='text-center md:text-left text-lg mt-5 md:pl-8'>
-        A proof of concept using{' '}
+        A proof of concept for a{' '}
         <a
           href='https://nextjs.org/'
           className='underline hover:text-blue-600 duration-200 transition-colors'>
           Next.js
         </a>{' '}
-        with an integrated{' '}
+        App using an integrated{' '}
         <a
           href='https://tiddlywiki.com'
           className='underline hover:text-blue-600 duration-200 transition-colors'>
           TiddlyWiki
         </a>{' '}
-        CMS.
+        as CMS.
       </h2>
     </section>
   );

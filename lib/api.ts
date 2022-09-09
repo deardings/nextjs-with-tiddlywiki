@@ -13,6 +13,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     published_date: '',
     title: '',
     excerpt: '',
+    cover_image: '',
   };
 
   type Items = {
@@ -36,6 +37,9 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
     if (field === 'excerpt') {
       items[field] = post.excerpt;
+    }
+    if (field === 'cover_image') {
+      items[field] = post.cover_image;
     }
   });
 

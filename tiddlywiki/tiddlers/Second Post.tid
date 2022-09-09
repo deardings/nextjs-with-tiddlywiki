@@ -1,8 +1,11 @@
+cover_image: martin-pechy-iXHdGk8JVYU-unsplash.jpg
 created: 20220907165340969
-modified: 20220907184327781
-published_date: 20220907204327780
+modified: 20220909134938826
+published_date: 20220909154359951
 tags: Published
 title: Second Post
 type: text/vnd.tiddlywiki
 
-This post is not published yet. Try it out and push the publish-button on the upper right corner of this tiddler!
+<$set name="published-status" filter="[all[current]tag[Published]]" value={{$:/plugins/dd/nextjs-with-tiddlywiki/published-description}} emptyValue={{$:/plugins/dd/nextjs-with-tiddlywiki/unpublished-description}}>
+<<published-status>>
+</$set>

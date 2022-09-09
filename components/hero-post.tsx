@@ -1,16 +1,33 @@
 import TiddlerDateFormatter from './tiddler-date-formatter';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {
   title: string;
   excerpt: string;
   published_date: string;
   slug: string;
+  cover_image: string;
 };
 
-const HeroPost = ({ title, excerpt, published_date, slug }: Props) => {
+const HeroPost = ({
+  title,
+  excerpt,
+  published_date,
+  slug,
+  cover_image,
+}: Props) => {
   return (
     <section>
+      <div className='mb-8'>
+        <Image
+          src={cover_image ? `/img/${cover_image}` : '/img/standard-image.jpg'}
+          width='30em'
+          height='20em'
+          layout='responsive'
+          objectFit='contain'
+        />
+      </div>
       <div className='md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28'>
         <div>
           <h1 className='mb-4 text-6xl font-bold lg:text-5xl leading-tight'>

@@ -4,6 +4,7 @@ type PageType = {
     title: string;
     published_date: string;
     text: string;
+    cover_image: string;
   };
 };
 

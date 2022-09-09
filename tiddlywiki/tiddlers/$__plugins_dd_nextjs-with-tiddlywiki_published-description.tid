@@ -1,0 +1,7 @@
+created: 20220908133120307
+modified: 20220909135448224
+tags: 
+title: $:/plugins/dd/nextjs-with-tiddlywiki/published-description
+type: text/vnd.tiddlywiki
+
+This post is published! By pushing the publish button it received the tag "Published", the field "published_date" has been set to the current date and all tiddlers tagged "Published" have been exported to the "published.json" tiddler/file.

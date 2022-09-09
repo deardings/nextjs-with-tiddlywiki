@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "concurrently --kill-others \"next dev\" \"tiddlywiki ./tiddlywiki/ --listen\"",
     "build": "next build",
-    "start": "next start",
+    "start": "concurrently --kill-others \"next start\" \"tiddlywiki ./tiddlywiki/ --listen\"",
     "lint": "next lint"
   },
   "dependencies": {

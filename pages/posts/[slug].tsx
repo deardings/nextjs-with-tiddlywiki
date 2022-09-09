@@ -4,18 +4,29 @@ import Container from '../../components/container';
 import PageType from '../../interfaces/page';
 import { getAllPosts, getPostBySlug } from '../../lib/api';
 import TiddlerDateFormatter from '../../components/tiddler-date-formatter';
+import Image from 'next/image';
 
 export default function Page({ page }: PageType) {
+  console.log(page)
   return (
     <>
       <Layout>
         <Container>
           <Head>
-            <title>
-              {page.title}
-            </title>
+            <title>{page.title} | Next.js with Tiddlywiki</title>
           </Head>
-          <h1 className='text-5xl mx-auto font-bold tracking-tighter leading-tight md:pr-8'>
+          <div className='mb-8'>
+            <Image
+              src={
+                page.cover_image ? `/img/${page.cover_image}` : '/img/standard-image.jpg'
+              }
+              width='30em'
+              height='20em'
+              layout='responsive'
+              objectFit='cover'
+            />
+          </div>
+          <h1 className='text-8xl mx-auto font-bold tracking-tighter leading-tight md:pr-8'>
             <div dangerouslySetInnerHTML={{ __html: page.title }}></div>
           </h1>
           <div className='text-lg mb-4'>
@@ -42,6 +53,7 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'published_date',
     'text',
+    'cover_image',
   ]);
   return { props: { page } };
 }

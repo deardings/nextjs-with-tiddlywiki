@@ -1,0 +1,7 @@
+created: 20220909134250612
+modified: 20220909134312564
+tags: 
+title: $:/config/nextjs-with-tiddlywiki/publish-display-filter
+type: text/vnd.tiddlywiki
+
+[all[current]!is[system]!tag[Published]]

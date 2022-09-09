@@ -19,6 +19,7 @@ const MorePosts = ({ posts }: Props) => {
             published_date={post.published_date}
             excerpt={post.excerpt}
             slug={post.slug}
+            cover_image={post.cover_image}
           />
         ))}
       </div>

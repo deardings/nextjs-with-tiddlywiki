@@ -1,0 +1,32 @@
+caption: {{$:/core/images/export-button}} {{$:/language/Buttons/Publish/Caption}}
+created: 20220908211415864
+description: {{$:/language/Buttons/Publish/Hint}}
+modified: 20220909134120131
+tags: $:/tags/ViewToolbar
+title: $:/plugins/dd/nextjs-with-tiddlywiki/unpublish-button
+type: text/vnd.tiddlywiki
+
+\define tv-action-refresh-policy() always
+
+\define unpublish-actions()
+<$action-deletefield $field="published_date"/>
+<$action-listops $tags="-Published"/>
+<$wikify name="json-content" text={{{ [[$:/plugins/dd/nextjs-with-tiddlywiki/publish-exporter]get[text]] }}}>
+<$action-setfield $tiddler="published.json" $field="text" $value=<<json-content>> />
+<$/wikify>
+\end
+
+\define unpublishButton()
+<$list filter={{$:/config/nextjs-with-tiddlywiki/published-display-filter}} variable=nul>
+<$button tooltip={{$:/language/Buttons/Unpublish/Hint}} aria-label={{$:/language/Buttons/Unpublish/Caption}} class=<<tv-config-toolbar-class>> actions=<<unpublish-actions>>>
+<$list filter="[<tv-config-toolbar-icons>match[yes]]">
+{{$:/images/nextjs-with-tiddlywiki/unpublish-button}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>match[yes]]">
+<span class="tc-btn-text"><$text text="Unpublish (remove from published.json"/></span>
+</$list>
+</$button>
+</$list>
+\end
+
+<<unpublishButton>>
