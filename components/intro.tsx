@@ -11,7 +11,7 @@ const Intro = () => {
           className='underline hover:text-blue-600 duration-200 transition-colors'>
           Next.js
         </a>{' '}
-        App using an integrated{' '}
+        app using an integrated{' '}
         <a
           href='https://tiddlywiki.com'
           className='underline hover:text-blue-600 duration-200 transition-colors'>
