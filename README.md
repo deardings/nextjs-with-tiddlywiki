@@ -14,9 +14,11 @@ After evaluating a bunch of headless CMS systems provided with Next.js, they all
 
 But the structured content is already there, I realised, it lies in my TiddlyWiki on my VPS behind a reverse proxy. So I took it from there. TiddlyWiki might not be a dedicated and not the best CMS, but I'm not building a high level enterprise website anyway.
 
-## Demo
+## Demo and TiddlyWiki files
 
 A demo of the frontend is available at [https://nextjs-with-tiddlywiki.vercel.app/](https://nextjs-with-tiddlywiki.vercel.app/).
+
+All relevant tiddlers are bundled in the [tiddlywiki/tiddlers/nextjs-with-tiddlywiki.json](tiddlywiki/tiddlers/nextjs-with-tiddlywiki.json) file.
 
 ## Getting Started
 
