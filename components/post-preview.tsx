@@ -22,8 +22,8 @@ const PostPreview = ({
       <div className='mb-4'>
         <Image
           src={cover_image ? `/img/${cover_image}` : '/img/standard-image.jpg'}
-          width='30em'
-          height='20em'
+          width='300'
+          height='200'
           layout='responsive'
           objectFit='cover'
           alt={title}
@@ -41,8 +41,11 @@ const PostPreview = ({
         className='text-lg leading-relaxed mb-4 prose'
         dangerouslySetInnerHTML={{ __html: excerpt }}></div>
       <div className='text-lg leading-relaxed mb-4 bold'>
-        <Link as={`/posts/${slug}`} href='/posts/[slug]'>
-          <a className='hover:underline'>...read on</a>
+        <Link
+          as={`/posts/${slug}`}
+          className='hover:underline'
+          href='/posts/[slug]'>
+          ...read on
         </Link>
       </div>
     </div>

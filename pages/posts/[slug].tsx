@@ -20,8 +20,8 @@ export default function Page({ page }: PageType) {
               src={
                 page.cover_image ? `/img/${page.cover_image}` : '/img/standard-image.jpg'
               }
-              width='30em'
-              height='20em'
+              width='30'
+              height='20'
               layout='responsive'
               objectFit='cover'
               alt={page.title}

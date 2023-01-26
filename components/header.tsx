@@ -6,13 +6,13 @@ const Header = () => {
     <Container>
       <div className='flex justify-end gap-10 mb-8 mt-8'>
         <h2 className='text-3xl font-bold'>
-          <Link href='/'>
-            <a className='hover:underline'>Home</a>
+          <Link className='hover:underline' href='/'>
+            Home
           </Link>
         </h2>
         <h2 className='text-3xl font-bold'>
-          <Link href='/allposts'>
-            <a className='hover:underline'>All Posts</a>
+          <Link className='hover:underline' href='/allposts'>
+            All Posts
           </Link>
         </h2>
       </div>
