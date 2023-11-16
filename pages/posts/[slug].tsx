@@ -5,6 +5,7 @@ import PageType from '../../interfaces/page';
 import { getAllPosts, getPostBySlug } from '../../lib/api';
 import TiddlerDateFormatter from '../../components/tiddler-date-formatter';
 import Image from 'next/image';
+import TiddlerType from '../../interfaces/tiddler';
 
 export default function Page({ page }: PageType) {
   console.log(page)
@@ -60,10 +61,10 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const posts = await getAllPosts(['slug']);
 
   return {
-    paths: posts.map((post) => {
+    paths: posts.map((post: TiddlerType) => {
       return {
         params: {
           slug: post.slug,

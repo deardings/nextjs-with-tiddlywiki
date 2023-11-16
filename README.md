@@ -1,3 +1,8 @@
+## Update 20231116
+
+This Repo is out of date. After performing relevant module updates, it does not build anymore. I managed to dived deeper into Tiddlywikis webserver API though and figured out different approaches to use it with Next.js. I will try to release a complete rebuild of this Repo in the next months.
+
+
 ## Disclaimer
 
 This is my first public Github-repository that I see some kind of value in. I am an awful programmer and autodidact, so by no means I can claim to understand all the features and concepts neither of the Next.js nor the TiddlyWiki ecosystem. Yet, I have been running a little website with Next.js for more than a year and am using TIddlyWiki to keep and organize my journal with nowadays more than two thousand tiddlers since 2018.

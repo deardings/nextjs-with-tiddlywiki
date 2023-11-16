@@ -39,13 +39,13 @@ export default function Index({ recentPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const recentPosts = getAllPosts([
+  const recentPosts = await getAllPosts([
     'title',
     'published_date',
     'excerpt',
     'slug',
     'cover_image',
-  ]).slice(0, 9);
+  ]);
 
   return {
     props: { recentPosts },
