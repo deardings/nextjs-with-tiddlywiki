@@ -1,6 +1,6 @@
 ## Update 20231116
 
-This Repo is out of date. After performing relevant module updates, it does not build anymore. I managed to dived deeper into Tiddlywikis webserver API though and figured out different approaches to use it with Next.js. I will try to release a complete rebuild of this Repo in the next months.
+This Repo is out of date. After performing relevant module updates, it does not build anymore. I managed to dive deeper into Tiddlywikis webserver API though and figured out different approaches to use it with Next.js. I will try to release a complete rebuild of this Repo in the next months.
 
 
 ## Disclaimer
